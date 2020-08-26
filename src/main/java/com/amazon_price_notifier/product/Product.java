@@ -1,4 +1,4 @@
-package amazon_price_notifier.product;
+package com.amazon_price_notifier.product;
 
 import lombok.Data;
 
