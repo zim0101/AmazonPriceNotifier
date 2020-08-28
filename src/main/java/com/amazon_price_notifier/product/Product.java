@@ -2,6 +2,9 @@ package com.amazon_price_notifier.product;
 
 import lombok.Data;
 
+/**
+ * Product entity contains all columns as properties
+ */
 @Data
 public class Product {
     /**
@@ -15,7 +18,7 @@ public class Product {
     /**
      * Product price
      */
-    public float price;
+    public double price;
     /**
      * Vendor name. For example: Amazon
      */
@@ -33,9 +36,36 @@ public class Product {
      */
     public String nameSelector;
 
-    public Product(int id, String name, float price, String vendor,
-                   String url, String priceSelector, String nameSelector) {
+    /**
+     * @param id Product id
+     * @param name Product name
+     * @param price Product price
+     * @param vendor Product vendor
+     * @param url Product url
+     * @param priceSelector Product price selector
+     * @param nameSelector Product name selector
+     */
+    public Product(int id, String name, double price, String vendor, String url, String priceSelector,
+                   String nameSelector) {
         this.id = id;
+        this.name = name;
+        this.price = price;
+        this.vendor = vendor;
+        this.url = url;
+        this.priceSelector = priceSelector;
+        this.nameSelector = nameSelector;
+    }
+
+    /**
+     * @param name Product name
+     * @param price Product price
+     * @param vendor Product vendor
+     * @param url Product url
+     * @param priceSelector Product price selector
+     * @param nameSelector Product name selector
+     */
+    public Product(String name, double price, String vendor, String url, String priceSelector,
+                   String nameSelector) {
         this.name = name;
         this.price = price;
         this.vendor = vendor;
