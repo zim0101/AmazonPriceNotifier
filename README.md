@@ -16,3 +16,5 @@ This app will search for product price changes after a periodic time.
 To start the application add it's execution program to your system cron job. Best if you can set the cron after every reboot.
 
 More description will come soon!
+
+![Amazon price notifier  Java](https://user-images.githubusercontent.com/27778619/91544185-320bc680-e941-11ea-9966-22a1f9704ab4.jpeg)
